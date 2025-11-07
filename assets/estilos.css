@@ -379,6 +379,15 @@ body {
   text-align: center;
   font-size: 0.9rem;
 }
+.footer .footer-bottom .social-link {
+  color: rgba(245, 241, 237, 0.7);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.footer .footer-bottom .social-link:hover {
+  color: #f5f1ed;
+  padding-left: 5px;
+}
 
 @media (max-width: 992px) {
   .gallery-section .carousel .carousel-control-prev {

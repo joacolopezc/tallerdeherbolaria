@@ -1,24 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="imagenes/favicon.ico" type="imagen">
-    <title>Taller de Herbolaria</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" href="imagenes/favicon.png" type="image/png">
+
+  <!-- Título / Descripción -->
+  <title>Taller de Herbolaria | Tierra Mailott</title>
+  <meta name="description" content="Aprendé herbolaria y el uso de plantas medicinales en este taller presencial en Villa Allende, Córdoba. Una experiencia educativa y conexión con la naturaleza. Comparto con respeto y amor, Mailott.">
+  <meta name="author" content="Lorena Camilotto">
+  <meta name="google-site-verification" content="wrannsPeKwH6e_c3HbDhEhdFDuF_aw-VPP9DlAMdwY0" />
+  <meta name="google-site-verification" content="ccyJ4FQbk4RJMpbsTHhVVoOWmQhW-Uou7AzcPPOp2ss" />
+
+  <!-- Canonical + robots -->
+  <link rel="canonical" href="https://tierramailott.com/">
+  <meta name="robots" content="index, follow">
+
+  <!-- Social / Open Graph -->
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Tierra Mailott">
+  <meta property="og:title" content="Taller de Herbolaria | Tierra Mailott">
+  <meta property="og:description" content="Aprendé herbolaria y el uso de plantas medicinales en este taller presencial en Villa Allende, Córdoba. Con respeto y amor, Mailott.">
+  <meta property="og:image" content="https://tierramailott.com/imagenes/ermi.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://tierramailott.com/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@tierra.mailott">
+  <meta name="twitter:title" content="Taller de Herbolaria | Tierra Mailott">
+  <meta name="twitter:description" content="Aprendé herbolaria y el uso de plantas medicinales en Villa Allende, Córdoba. Experiencia educativa y conexión con la naturaleza.">
+  <meta name="twitter:image" content="https://tierramailott.com/imagenes/ermi.jpeg">
+
+  <!-- Local / Geo -->
+  <meta name="geo.region" content="AR-X">
+  <meta name="geo.placename" content="Villa Allende, Córdoba">
+  <meta name="geo.position" content="-31.2941,-64.2956">
+  <meta name="ICBM" content="-31.2941,-64.2956">
+
+  <!-- Theme color (móvil / barra de navegador) -->
+  <meta name="theme-color" content="#2b6a3a">
+
+  <!-- Google Fonts (preconnect ya incluido) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (mover al head evita FOIT/ICON blink) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/estilos.css">
+
+  <!-- JSON-LD (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Tierra Mailott",
+    "image": "https://tierramailott.com/imagenes/ermi.jpeg",
+    "telephone": "+5493515194114",
+    "email": "tierramailott@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sargento Cabral 227",
+      "addressLocality": "Villa Allende",
+      "addressRegion": "Córdoba",
+      "addressCountry": "AR"
+    },
+    "geo": {"@type":"GeoCoordinates","latitude":-31.2941,"longitude":-64.2956},
+    "url": "https://tierramailott.com/",
+    "sameAs": [
+      "https://www.instagram.com/tierra.mailott",
+      "https://wa.me/5493515194114"
+    ],
+    "description": "Talleres de herbolaria y venta de plantas medicinales en Villa Allende, Córdoba."
+  }
+  </script>
+
+  <!-- Opcional: manifest PWA -->
+  <!-- <link rel="manifest" href="/manifest.json"> -->
 </head>
 <body>
 
@@ -26,7 +93,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Tierra Mailott</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -58,10 +125,10 @@
                 <!-- Left Column - Images -->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
                     <div class="image-container img-top-left">
-                        <img src="imagenes/ermi.jpeg" alt="Cosechar, Plantas Medicinales">
+                        <img src="imagenes/ermi.jpeg" alt="Cosechar, Plantas Medicinales" loading="lazy">
                     </div>
                     <div class="image-container img-bottom-left" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                        <img src="imagenes/jugo.jpeg" alt="Jugo Verde, Medicinal">
+                        <img src="imagenes/jugo.jpeg" alt="Jugo Verde, Medicinal" fetchpriority="high" loading="eager">
                     </div>
                 </div>
                 
@@ -75,7 +142,7 @@
                 <!-- Right Column - Image -->
                 <div class="col-lg-3 col-md-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
                     <div class="image-container img-right">
-                        <img src="imagenes/alcaucil.jpeg" alt="Alcaucil, Huerta">
+                        <img src="imagenes/alcaucil.jpeg" alt="Alcaucil, Huerta" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -88,7 +155,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
                     <div class="image-container about-image">
-                        <img src="imagenes/loredes.jpeg" alt="Lorena Camilotto, Tierra Mailott">
+                        <img src="imagenes/loredes.jpeg" alt="Lorena Camilotto, Tierra Mailott" loading="lazy">
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
@@ -188,37 +255,23 @@
             
             <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Ir a la primera imagen"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Ir a la segunda imagen"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Ir a la tercera imagen"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3" aria-label="Ir a la cuarta imagen"></button>
                 </div>
                 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="imagenes/fondo6.png" class="d-block w-100" alt="Gallery 1">
+                                <img src="imagenes/fondo6.png" class="d-block w-100" alt="Flores, Rosa, Flores Rosas, Planta medicinal" loading="lazy">
                             </div>
                             <div class="col-md-4">
-                                <img src="imagenes/menta.jpeg" class="d-block w-100" alt="Gallery 2">
+                                <img src="imagenes/menta.jpeg" class="d-block w-100" alt="Menta, Planta, Planta de menta" loading="lazy">
                             </div>
                             <div class="col-md-4">
-                                <img src="imagenes/sol.jpeg" class="d-block w-100" alt="Gallery 3">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="imagenes/arbol.jpeg" class="d-block w-100" alt="Gallery 4">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="imagenes/welcome.jpeg" class="d-block w-100" alt="Gallery 5">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="imagenes/taller1.jpeg" class="d-block w-100" alt="Gallery 6">
+                                <img src="imagenes/sol.jpeg" class="d-block w-100" alt="Flores, Amarillas, Flores Amarillas, Arbol, Sol" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -226,13 +279,41 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="imagenes/violetas.jpeg" class="d-block w-100" alt="Gallery 7">
+                                <img src="imagenes/arbol.jpeg" class="d-block w-100" alt="Arbol, Ramas, Arbol desde abajo, Hojas" loading="lazy">
                             </div>
                             <div class="col-md-4">
-                                <img src="imagenes/violetas2.jpeg" class="d-block w-100" alt="Gallery 8">
+                                <img src="imagenes/welcome.jpeg" class="d-block w-100" alt="Tierra Mailott, Sargento Cabral 227, Villa Allende, Entrada principal, Bienvenido a Tierra Mailott" loading="lazy">
                             </div>
                             <div class="col-md-4">
-                                <img src="imagenes/atadas.jpeg" class="d-block w-100" alt="Gallery 9">
+                                <img src="imagenes/taller1.jpeg" class="d-block w-100" alt="Taller de Herbolaria, Grupo, Alumnos, Educación, Taller, Herbolaria, Plantas, Medicina Natural, Naturaleza" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="imagenes/violetas.jpeg" class="d-block w-100" alt="Flores, Violetas, Flores violetas, Fruto" loading="lazy">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="imagenes/violetas2.jpeg" class="d-block w-100" alt="Flores, Violetas, Flores violetas, Fruto" loading="lazy">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="imagenes/atadas.jpeg" class="d-block w-100" alt="Sahumos, Herbolaria, Plantas, Medicinal, Plantas medicinales" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="imagenes/floresnaranjas.jpeg" class="d-block w-100" alt="Flores, Naranjas, Fruto, Flores naranjas, Herbolaria, Ramo" loading="lazy">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="imagenes/211(2).jpeg" class="d-block w-100" alt="Grupo, Trabajo, Alumnos, Estudio, Investigación, Herbolaria, Plantas, Medicina natural, Curso, Taller, Taller de Herbolaria" loading="lazy">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="imagenes/alcaucil2.jpeg" class="d-block w-100" alt="Alcaucil, Cosecha, Siembra, Cosechar, Verde, Verdura, Huerta, Almacén de plantas, Herbolaria" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -256,30 +337,31 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0" data-aos="fade-left">
                     <div class="image-container work-image">
-                        <img src="imagenes/ermi.jpeg" alt="Sargento Cabral 227, Tierra Mailott">
+                        <img src="imagenes/211.jpeg" alt="Grupo, Trabajo, Alumnos, Estudio, Investigación, Herbolaria, Plantas, Medicina natural, Curso, Taller, Taller de Herbolaria, Aprendizaje" loading="lazy">
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1" data-aos="fade-right">
                     <div class="section-content">
                         <h2 class="section-title">Detalles del taller</h2>
-                        <p class="section-text">
+                        <div class="section-text">
                             <ul>
-                                <li>Valor: $10,000</li>
-                                <li>Forma de pago: transferencia al alias <strong>tierramailott</strong> o cuenta Lorena Camilotto.</li>
                                 <li>Es sólo presencial.</li>
                                 <li>Se abona por adelantado (de ese modo se reserva el lugar)</li>
                                 <li>Se trabaja al aire libre y bajo techo.</li>
                                 <li>Traé cuaderno, lapicera y tu mate.</li>
+                                <li>Podés sumarte en cualquier encuentro, ya que cada encuentro comienza y termina el mismo día.</li>
                             </ul>
-                        </p>
-                        <p class="section-text">
+                        </div>
+                        <div class="section-text">
+                            <h3>Próximos encuentros:</h3>
                             <ul>
-                                <li><strong>Domingo 2 de noviembre</strong></li>
+                                <li>Domingo <strong>16 de noviembre</strong></li>
+                                <li>Domingo <strong>14 de diciembre</strong></li>
                                 <li>De <strong>9 a 11 hs</strong></li>
                                 <li>En <strong>Sargento Cabral 227</strong>, Villa Allende</li>
                             </ul>
                             Disfrutá de un espacio único para aprender, explorar y conectar con las plantas medicinales.
-                        </p>
+                        </div>
                         <a href="https://www.instagram.com/tierra.mailott?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" class="btn-secondary">Más info en @tierra.mailott</a>
                     </div>
                 </div>
@@ -296,11 +378,11 @@
                     <p class="footer-text">
                         Comparto con respeto y amor, Mailott.
                     </p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.208682258803!2d-64.29688682494545!3d-31.29797689053612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329d03483a9551%3A0x452c8abd631fc9e7!2sSgto.%20Cabral%20227%2C%205105%20Villa%20Allende%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2ses!4v1761758898336!5m2!1ses-419!2ses" width="250" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.208682258803!2d-64.29688682494545!3d-31.29797689053612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329d03483a9551%3A0x452c8abd631fc9e7!2sSgto.%20Cabral%20227%2C%205105%20Villa%20Allende%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2ses!4v1761758898336!5m2!1ses-419!2ses" width="250" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicación de Tierra Mailott en Villa Allende, Córdoba"></iframe>
                 </div>
                 
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h4 class="footer-title">Links Rápidos</h4>
+                    <h4 class="footer-title">Enlaces Rápidos</h4>
                     <ul class="footer-links">
                         <li><a href="#home">Inicio</a></li>
                         <li><a href="#about">Sobre Mi</a></li>
@@ -321,7 +403,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Tierra Mailott. Todos los derechos reservados. | Hecho con ♥</p>
+                <p>&copy; 2025 Tierra Mailott. Todos los derechos reservados. | Hecho por <a href="https://www.instagram.com/joacolopezc" target="_blank" class="social-link">Joaco Lopez</a> con ♥</p>
             </div>
         </div>
     </footer>

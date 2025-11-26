@@ -63,31 +63,62 @@
   <link rel="stylesheet" href="assets/estilos.css?v=1.0">
   <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-  <!-- JSON-LD (LocalBusiness) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Tierra Mailott",
-    "image": "https://tierramailott.com/imagenes/ermi.jpeg",
-    "telephone": "+5493515194114",
-    "email": "tierramailott@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Sargento Cabral 227",
-      "addressLocality": "Villa Allende",
-      "addressRegion": "Córdoba",
-      "addressCountry": "AR"
-    },
-    "geo": {"@type":"GeoCoordinates","latitude":-31.2941,"longitude":-64.2956},
-    "url": "https://tierramailott.com/",
-    "sameAs": [
-      "https://www.instagram.com/tierra.mailott",
-      "https://wa.me/5493515194114"
-    ],
-    "description": "Talleres de herbolaria y venta de plantas medicinales en Villa Allende, Córdoba."
-  }
-  </script>
+ <!-- JSON-LD (LocalBusiness / Store) -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "Store"],
+      "@id": "https://tierramailott.com/#localbusiness",
+      "name": "Tierra Mailott",
+      "image": "https://tierramailott.com/imagenes/ermi.jpeg",
+      "url": "https://tierramailott.com/",
+      "telephone": "+5493515194114",
+      "email": "tierramailott@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Sargento Cabral 227",
+        "addressLocality": "Villa Allende",
+        "addressRegion": "Córdoba",
+        "postalCode": "5105",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -31.2941,
+        "longitude": -64.2956
+      },
+      "description": "Tierra Mailott ofrece talleres de herbolaria y venta de plantas medicinales y aromáticas en Villa Allende, Córdoba.",
+      "sameAs": [
+        "https://www.instagram.com/tierra.mailott",
+        "https://wa.me/5493515194114"
+      ],
+      "priceRange": "$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "15:00"
+        }
+      ]
+    }
+    </script>
+    
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8Y7SVFX89Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8Y7SVFX89Z');
+</script>
 </head>
 <body>
 
